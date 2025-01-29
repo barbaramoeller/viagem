@@ -21,7 +21,27 @@
 }
 
 body{
-  font: var(--text)
+  font: var(--text);
   color: var(--text-color-secondary);
   background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*para herdar do body */
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.container { /* para todo o projeto vai aplicar */
+   padding-inline: 32px; /* se colocar 1 valor aplica p 2 lados */
+   max-width: 1280px;
+   margin-inline: auto; /* só aplica para as laterias */
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
 }

@@ -1,0 +1,23 @@
+nav {
+   display: flex; /*para ficar um do lado do outro */
+   justify-content: space-between; /* para dar espaço entre os elementos */
+   align-items: center;
+   line-height: 0; /* para tirar qualquer espaço extra */
+   padding-block: 20px; /* aplica em cima e embaixo */
+}
+
+nav ul {
+ list-style: none; /* para tirar o ponto da ul */
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  padding-block: 8px;
+}
+
+nav ul li:last-child img { /* chama a ultima filha  da lista  */
+  width: 40px;
+  height: 40px;
+  object-fit: cover; 
+  border-radius: 50%;
+}
