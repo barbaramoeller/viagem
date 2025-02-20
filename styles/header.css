@@ -57,15 +57,6 @@ header .container {
 }
 
 @media (width < 80em) {
-
-  & nav {
-    display: flex;
-  }
-
-  & nav li:nth-child(1) img {
-    border: 2px solid red;
-  }
-
   & header #profile img {
   width: 10rem;
   height: 10rem;

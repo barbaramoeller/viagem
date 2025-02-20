@@ -10,9 +10,6 @@ nav ul {
   list-style: none; /* para tirar o ponto da ul */
   display: flex;
   align-items: center;
-  gap: 24px;
-
-  padding-block: 8px;
 }
 
 nav ul li:last-child img { /* chama a ultima filha  da lista  */
@@ -20,4 +17,17 @@ nav ul li:last-child img { /* chama a ultima filha  da lista  */
   height: 40px;
   object-fit: cover; 
   border-radius: 50%;
+}
+
+@media (width >= 80em) {
+  & nav ul {
+  gap: 24px;
+  padding-block: 8px;
+  }
+}
+
+@media (width < 80em) {
+  & nav li:nth-child(1) img {
+    margin-right: 1rem;
+  }
 }
